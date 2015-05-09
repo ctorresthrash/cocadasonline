@@ -44,25 +44,28 @@
 }
 
 -(void) showCarrito{
-
+    
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 - (IBAction)ordenarCocada:(id)sender {
-    if([self.montoTotal integerValue]<=0){
-    Orden *orden=[[Orden alloc] init];
+    NSLog(@"%li", [self.montoTotal integerValue]);
+    NSInteger localTotal=[self.montoTotal integerValue];
+    if(localTotal>0){
+        Orden *orden=[[Orden alloc] init];
         orden.cantidad=[NSNumber numberWithInteger:[self.cantidadCocadas.text integerValue]];
         orden.cocada=self.miCocada;
         orden.total=self.montoTotal;
         [self.carrito.ordenes addObject:orden];
+        [self.navigationController popViewControllerAnimated:YES];
     }else{
         self.total.text=[NSString stringWithFormat:@"Debe elegir la cantidad de %@  que desea", self.miCocada.nombre];
     }
@@ -75,5 +78,6 @@
     self.montoTotal=calculoTotal;
     self.total.text=[NSString stringWithFormat:@"Total: $%@", calculoTotal];
 }
+
 
 @end

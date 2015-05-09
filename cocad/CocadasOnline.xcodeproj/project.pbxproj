@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A92259A1AFE92B000A8AB3A /* Carrito.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9225991AFE92B000A8AB3A /* Carrito.m */; };
+		3A9629761AFEA7EA008A9CBE /* CarritoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9629751AFEA7EA008A9CBE /* CarritoTableViewCell.m */; };
+		3A9629791AFEA882008A9CBE /* CarritoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9629781AFEA882008A9CBE /* CarritoTableViewController.m */; };
 		3AA4EE3C1AFE917300A43786 /* Orden.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4EE3B1AFE917300A43786 /* Orden.m */; };
 		3AD96E6B1AFE6EF700B62840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E6A1AFE6EF700B62840 /* main.m */; };
 		3AD96E6E1AFE6EF700B62840 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E6D1AFE6EF700B62840 /* AppDelegate.m */; };
@@ -34,6 +36,10 @@
 /* Begin PBXFileReference section */
 		3A9225981AFE92B000A8AB3A /* Carrito.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carrito.h; sourceTree = "<group>"; };
 		3A9225991AFE92B000A8AB3A /* Carrito.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Carrito.m; sourceTree = "<group>"; };
+		3A9629741AFEA7EA008A9CBE /* CarritoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarritoTableViewCell.h; sourceTree = "<group>"; };
+		3A9629751AFEA7EA008A9CBE /* CarritoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarritoTableViewCell.m; sourceTree = "<group>"; };
+		3A9629771AFEA882008A9CBE /* CarritoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarritoTableViewController.h; sourceTree = "<group>"; };
+		3A9629781AFEA882008A9CBE /* CarritoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarritoTableViewController.m; sourceTree = "<group>"; };
 		3AA4EE3A1AFE917300A43786 /* Orden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orden.h; sourceTree = "<group>"; };
 		3AA4EE3B1AFE917300A43786 /* Orden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Orden.m; sourceTree = "<group>"; };
 		3AD96E651AFE6EF700B62840 /* CocadasOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocadasOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +148,8 @@
 				3AD96E981AFE7F5100B62840 /* CocadasTableViewController.m */,
 				3AD96E9A1AFE829800B62840 /* OrdenarCocadaViewController.h */,
 				3AD96E9B1AFE829800B62840 /* OrdenarCocadaViewController.m */,
+				3A9629771AFEA882008A9CBE /* CarritoTableViewController.h */,
+				3A9629781AFEA882008A9CBE /* CarritoTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +159,8 @@
 			children = (
 				3AD96E911AFE721500B62840 /* CocadaTableViewCell.h */,
 				3AD96E921AFE721500B62840 /* CocadaTableViewCell.m */,
+				3A9629741AFEA7EA008A9CBE /* CarritoTableViewCell.h */,
+				3A9629751AFEA7EA008A9CBE /* CarritoTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,6 +282,8 @@
 				3AD96E991AFE7F5100B62840 /* CocadasTableViewController.m in Sources */,
 				3AD96E6E1AFE6EF700B62840 /* AppDelegate.m in Sources */,
 				3AD96E961AFE73FA00B62840 /* Cocada.m in Sources */,
+				3A9629791AFEA882008A9CBE /* CarritoTableViewController.m in Sources */,
+				3A9629761AFEA7EA008A9CBE /* CarritoTableViewCell.m in Sources */,
 				3AD96E9C1AFE829800B62840 /* OrdenarCocadaViewController.m in Sources */,
 				3AD96E931AFE721500B62840 /* CocadaTableViewCell.m in Sources */,
 				3AA4EE3C1AFE917300A43786 /* Orden.m in Sources */,

@@ -91,6 +91,57 @@
             </objects>
             <point key="canvasLocation" x="1217" y="273"/>
         </scene>
+        <!--Carrito Table View Controller-->
+        <scene sceneID="zox-gS-chF">
+            <objects>
+                <tableViewController id="4jV-Do-DDW" customClass="CarritoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="vjE-79-j52">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarritoCellIdentifier" rowHeight="100" id="RmA-6K-HXb" customClass="CarritoTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RmA-6K-HXb" id="Zre-WN-BpE">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ou-nF-8TC">
+                                            <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0d-v3-lWb">
+                                            <rect key="frame" x="8" y="37" width="584" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbj-rl-WxU">
+                                            <rect key="frame" x="8" y="66" width="584" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cantidad" destination="T0d-v3-lWb" id="Dhg-st-Vuj"/>
+                                    <outlet property="producto" destination="4ou-nF-8TC" id="92c-fp-QXA"/>
+                                    <outlet property="total" destination="tbj-rl-WxU" id="qNL-At-81M"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4jV-Do-DDW" id="aEh-O5-jPf"/>
+                            <outlet property="delegate" destination="4jV-Do-DDW" id="OPf-Uj-hYO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMJ-ne-lgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408" y="1065"/>
+        </scene>
         <!--Ordenar Cocada View Controller-->
         <scene sceneID="Tfg-gd-60U">
             <objects>
@@ -103,14 +154,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XFA-UP-KvX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XFA-UP-KvX">
                                 <rect key="frame" x="200" y="117" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="fI2-9k-ZrP"/>
                                     <constraint firstAttribute="width" constant="200" id="kk8-ot-VY8"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTV-mq-AO1">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTV-mq-AO1">
                                 <rect key="frame" x="16" y="418" width="568" height="30"/>
                                 <color key="backgroundColor" red="0.77541035349999998" green="0.65635051209999995" blue="0.39543323930000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Ordenar">
@@ -126,13 +177,13 @@
                                     <action selector="ordenarCocada:" destination="EgT-ha-jQ3" eventType="touchUpInside" id="8Ox-GQ-k7T"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-yJ-zfs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-yJ-zfs">
                                 <rect key="frame" x="16" y="351" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cantidad a Ordenar" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdi-QX-yAX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cantidad a Ordenar" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdi-QX-yAX">
                                 <rect key="frame" x="16" y="380" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -162,7 +213,6 @@
                         <outlet property="imagenCocada" destination="XFA-UP-KvX" id="qns-dK-PBe"/>
                         <outlet property="ordenar" destination="xTV-mq-AO1" id="O4C-Bp-EbG"/>
                         <outlet property="total" destination="cIx-yJ-zfs" id="kzT-DF-OrQ"/>
-                        <segue destination="PxC-PW-vR2" kind="show" identifier="OrdenarReturnSegue" id="jyT-Pc-nda"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jh-rw-QEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,7 +220,4 @@
             <point key="canvasLocation" x="2012" y="273"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="jyT-Pc-nda"/>
-    </inferredMetricsTieBreakers>
 </document>
