@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SDc-97-lIC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dxC-c8-4BD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SDc-97-lIC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LCg-Fg-0bF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PxC-PW-vR2" kind="relationship" relationship="rootViewController" id="ksn-vZ-RJk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9NO-6C-atk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="805"/>
+        </scene>
+        <!--Productos-->
+        <scene sceneID="dIu-td-Fw9">
+            <objects>
+                <tableViewController id="PxC-PW-vR2" customClass="CocadasTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" id="hQU-mz-Ufr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CocadaCellIdentifier" rowHeight="120" id="aXQ-t6-Xek" customClass="CocadaTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aXQ-t6-Xek" id="dCm-RP-6na">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D7M-ju-RMT">
+                                            <rect key="frame" x="8" y="8" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="1GG-fX-gym"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="2kS-ip-nHT"/>
+                                                <constraint firstAttribute="width" constant="100" id="Rhq-Sx-Pta"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="50"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr6-gh-1z3">
+                                            <rect key="frame" x="116" y="8" width="476" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iW-x3-eEB">
+                                            <rect key="frame" x="116" y="37" width="476" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qr6-gh-1z3" firstAttribute="top" secondItem="dCm-RP-6na" secondAttribute="topMargin" id="6fN-Ty-x73"/>
+                                        <constraint firstItem="D7M-ju-RMT" firstAttribute="top" secondItem="qr6-gh-1z3" secondAttribute="top" id="Bx1-vO-U9Q"/>
+                                        <constraint firstItem="D7M-ju-RMT" firstAttribute="leading" secondItem="dCm-RP-6na" secondAttribute="leadingMargin" constant="-7" id="HOp-BA-xdy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="qr6-gh-1z3" secondAttribute="trailing" constant="-7" id="TZb-fn-c94"/>
+                                        <constraint firstItem="6iW-x3-eEB" firstAttribute="top" secondItem="qr6-gh-1z3" secondAttribute="bottom" constant="8" symbolic="YES" id="dhN-N9-B85"/>
+                                        <constraint firstItem="6iW-x3-eEB" firstAttribute="trailing" secondItem="qr6-gh-1z3" secondAttribute="trailing" id="g0R-Nx-fMc"/>
+                                        <constraint firstItem="qr6-gh-1z3" firstAttribute="leading" secondItem="6iW-x3-eEB" secondAttribute="leading" id="gXe-1u-j8K"/>
+                                        <constraint firstItem="qr6-gh-1z3" firstAttribute="leading" secondItem="D7M-ju-RMT" secondAttribute="trailing" constant="8" symbolic="YES" id="x3e-Ua-eUK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imagen" destination="D7M-ju-RMT" id="R7X-M6-yXO"/>
+                                    <outlet property="nombre" destination="qr6-gh-1z3" id="WV2-RF-4DU"/>
+                                    <outlet property="precio" destination="6iW-x3-eEB" id="eVt-SQ-wAD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Productos" id="y9y-5V-ENB"/>
+                    <connections>
+                        <segue destination="EgT-ha-jQ3" kind="show" identifier="ordenarProductoSegue" id="a6F-lb-23X"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfd-UH-QUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="273"/>
+        </scene>
+        <!--Ordenar Cocada View Controller-->
+        <scene sceneID="Tfg-gd-60U">
+            <objects>
+                <viewController id="EgT-ha-jQ3" customClass="OrdenarCocadaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dep-im-GgO"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfa-T0-z3j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ggC-ks-r1t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XFA-UP-KvX">
+                                <rect key="frame" x="200" y="117" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="fI2-9k-ZrP"/>
+                                    <constraint firstAttribute="width" constant="200" id="kk8-ot-VY8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTV-mq-AO1">
+                                <rect key="frame" x="16" y="418" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.77541035349999998" green="0.65635051209999995" blue="0.39543323930000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ordenar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ordenarCocada:" destination="EgT-ha-jQ3" eventType="touchUpInside" id="8Ox-GQ-k7T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-yJ-zfs">
+                                <rect key="frame" x="16" y="351" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cantidad a Ordenar" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdi-QX-yAX">
+                                <rect key="frame" x="16" y="380" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="calcularTotal:" destination="EgT-ha-jQ3" eventType="editingDidEnd" id="udo-Vi-Ezb"/>
+                                    <action selector="total:" destination="EgT-ha-jQ3" eventType="editingChanged" id="PA3-B8-rlJ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="XFA-UP-KvX" secondAttribute="centerX" id="6pv-gm-Zot"/>
+                            <constraint firstItem="XFA-UP-KvX" firstAttribute="top" secondItem="dep-im-GgO" secondAttribute="bottom" constant="53" id="DdT-Yo-qTo"/>
+                            <constraint firstItem="xTV-mq-AO1" firstAttribute="trailing" secondItem="ggC-ks-r1t" secondAttribute="trailingMargin" id="Ezw-1b-LJB"/>
+                            <constraint firstItem="xTV-mq-AO1" firstAttribute="top" secondItem="tdi-QX-yAX" secondAttribute="bottom" constant="8" id="L0L-NM-gfF"/>
+                            <constraint firstItem="xTV-mq-AO1" firstAttribute="leading" secondItem="ggC-ks-r1t" secondAttribute="leadingMargin" id="TOC-g8-ehn"/>
+                            <constraint firstItem="cIx-yJ-zfs" firstAttribute="leading" secondItem="ggC-ks-r1t" secondAttribute="leadingMargin" id="XQb-jz-bSx"/>
+                            <constraint firstItem="tdi-QX-yAX" firstAttribute="top" secondItem="cIx-yJ-zfs" secondAttribute="bottom" constant="8" id="cWp-zt-4LA"/>
+                            <constraint firstItem="tdi-QX-yAX" firstAttribute="leading" secondItem="ggC-ks-r1t" secondAttribute="leadingMargin" id="frK-Yh-eLp"/>
+                            <constraint firstItem="cIx-yJ-zfs" firstAttribute="trailing" secondItem="ggC-ks-r1t" secondAttribute="trailingMargin" id="ju8-Qm-CkX"/>
+                            <constraint firstItem="tdi-QX-yAX" firstAttribute="trailing" secondItem="ggC-ks-r1t" secondAttribute="trailingMargin" id="nzX-m3-0hS"/>
+                            <constraint firstItem="cIx-yJ-zfs" firstAttribute="top" secondItem="XFA-UP-KvX" secondAttribute="bottom" constant="34" id="pht-pz-okG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cantidadCocadas" destination="tdi-QX-yAX" id="h94-GW-47d"/>
+                        <outlet property="imagenCocada" destination="XFA-UP-KvX" id="qns-dK-PBe"/>
+                        <outlet property="ordenar" destination="xTV-mq-AO1" id="O4C-Bp-EbG"/>
+                        <outlet property="total" destination="cIx-yJ-zfs" id="kzT-DF-OrQ"/>
+                        <segue destination="PxC-PW-vR2" kind="show" identifier="OrdenarReturnSegue" id="jyT-Pc-nda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jh-rw-QEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="273"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jyT-Pc-nda"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A92259A1AFE92B000A8AB3A /* Carrito.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9225991AFE92B000A8AB3A /* Carrito.m */; };
+		3AA4EE3C1AFE917300A43786 /* Orden.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4EE3B1AFE917300A43786 /* Orden.m */; };
+		3AD96E6B1AFE6EF700B62840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E6A1AFE6EF700B62840 /* main.m */; };
+		3AD96E6E1AFE6EF700B62840 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E6D1AFE6EF700B62840 /* AppDelegate.m */; };
+		3AD96E741AFE6EF700B62840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD96E721AFE6EF700B62840 /* Main.storyboard */; };
+		3AD96E761AFE6EF700B62840 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD96E751AFE6EF700B62840 /* Images.xcassets */; };
+		3AD96E791AFE6EF700B62840 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD96E771AFE6EF700B62840 /* LaunchScreen.xib */; };
+		3AD96E851AFE6EF700B62840 /* CocadasOnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E841AFE6EF700B62840 /* CocadasOnlineTests.m */; };
+		3AD96E931AFE721500B62840 /* CocadaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E921AFE721500B62840 /* CocadaTableViewCell.m */; };
+		3AD96E961AFE73FA00B62840 /* Cocada.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E951AFE73FA00B62840 /* Cocada.m */; };
+		3AD96E991AFE7F5100B62840 /* CocadasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E981AFE7F5100B62840 /* CocadasTableViewController.m */; };
+		3AD96E9C1AFE829800B62840 /* OrdenarCocadaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96E9B1AFE829800B62840 /* OrdenarCocadaViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AD96E7F1AFE6EF700B62840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD96E5D1AFE6EF700B62840 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AD96E641AFE6EF700B62840;
+			remoteInfo = CocadasOnline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A9225981AFE92B000A8AB3A /* Carrito.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carrito.h; sourceTree = "<group>"; };
+		3A9225991AFE92B000A8AB3A /* Carrito.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Carrito.m; sourceTree = "<group>"; };
+		3AA4EE3A1AFE917300A43786 /* Orden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orden.h; sourceTree = "<group>"; };
+		3AA4EE3B1AFE917300A43786 /* Orden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Orden.m; sourceTree = "<group>"; };
+		3AD96E651AFE6EF700B62840 /* CocadasOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocadasOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD96E691AFE6EF700B62840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD96E6A1AFE6EF700B62840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AD96E6C1AFE6EF700B62840 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AD96E6D1AFE6EF700B62840 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AD96E731AFE6EF700B62840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AD96E751AFE6EF700B62840 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3AD96E781AFE6EF700B62840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3AD96E7E1AFE6EF700B62840 /* CocadasOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocadasOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD96E831AFE6EF700B62840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD96E841AFE6EF700B62840 /* CocadasOnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocadasOnlineTests.m; sourceTree = "<group>"; };
+		3AD96E911AFE721500B62840 /* CocadaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocadaTableViewCell.h; sourceTree = "<group>"; };
+		3AD96E921AFE721500B62840 /* CocadaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocadaTableViewCell.m; sourceTree = "<group>"; };
+		3AD96E941AFE73FA00B62840 /* Cocada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cocada.h; sourceTree = "<group>"; };
+		3AD96E951AFE73FA00B62840 /* Cocada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cocada.m; sourceTree = "<group>"; };
+		3AD96E971AFE7F5100B62840 /* CocadasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocadasTableViewController.h; sourceTree = "<group>"; };
+		3AD96E981AFE7F5100B62840 /* CocadasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocadasTableViewController.m; sourceTree = "<group>"; };
+		3AD96E9A1AFE829800B62840 /* OrdenarCocadaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdenarCocadaViewController.h; sourceTree = "<group>"; };
+		3AD96E9B1AFE829800B62840 /* OrdenarCocadaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdenarCocadaViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AD96E621AFE6EF700B62840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD96E7B1AFE6EF700B62840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AD96E5C1AFE6EF700B62840 = {
+			isa = PBXGroup;
+			children = (
+				3AD96E671AFE6EF700B62840 /* CocadasOnline */,
+				3AD96E811AFE6EF700B62840 /* CocadasOnlineTests */,
+				3AD96E661AFE6EF700B62840 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AD96E661AFE6EF700B62840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AD96E651AFE6EF700B62840 /* CocadasOnline.app */,
+				3AD96E7E1AFE6EF700B62840 /* CocadasOnlineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AD96E671AFE6EF700B62840 /* CocadasOnline */ = {
+			isa = PBXGroup;
+			children = (
+				3AD96E901AFE71F900B62840 /* Model */,
+				3AD96E8F1AFE71D200B62840 /* View */,
+				3AD96E8E1AFE6F2300B62840 /* Controller */,
+				3AD96E6C1AFE6EF700B62840 /* AppDelegate.h */,
+				3AD96E6D1AFE6EF700B62840 /* AppDelegate.m */,
+				3AD96E721AFE6EF700B62840 /* Main.storyboard */,
+				3AD96E751AFE6EF700B62840 /* Images.xcassets */,
+				3AD96E771AFE6EF700B62840 /* LaunchScreen.xib */,
+				3AD96E681AFE6EF700B62840 /* Supporting Files */,
+			);
+			path = CocadasOnline;
+			sourceTree = "<group>";
+		};
+		3AD96E681AFE6EF700B62840 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AD96E691AFE6EF700B62840 /* Info.plist */,
+				3AD96E6A1AFE6EF700B62840 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AD96E811AFE6EF700B62840 /* CocadasOnlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AD96E841AFE6EF700B62840 /* CocadasOnlineTests.m */,
+				3AD96E821AFE6EF700B62840 /* Supporting Files */,
+			);
+			path = CocadasOnlineTests;
+			sourceTree = "<group>";
+		};
+		3AD96E821AFE6EF700B62840 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AD96E831AFE6EF700B62840 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AD96E8E1AFE6F2300B62840 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AD96E971AFE7F5100B62840 /* CocadasTableViewController.h */,
+				3AD96E981AFE7F5100B62840 /* CocadasTableViewController.m */,
+				3AD96E9A1AFE829800B62840 /* OrdenarCocadaViewController.h */,
+				3AD96E9B1AFE829800B62840 /* OrdenarCocadaViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AD96E8F1AFE71D200B62840 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AD96E911AFE721500B62840 /* CocadaTableViewCell.h */,
+				3AD96E921AFE721500B62840 /* CocadaTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AD96E901AFE71F900B62840 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AD96E941AFE73FA00B62840 /* Cocada.h */,
+				3AD96E951AFE73FA00B62840 /* Cocada.m */,
+				3AA4EE3A1AFE917300A43786 /* Orden.h */,
+				3AA4EE3B1AFE917300A43786 /* Orden.m */,
+				3A9225981AFE92B000A8AB3A /* Carrito.h */,
+				3A9225991AFE92B000A8AB3A /* Carrito.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AD96E641AFE6EF700B62840 /* CocadasOnline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD96E881AFE6EF700B62840 /* Build configuration list for PBXNativeTarget "CocadasOnline" */;
+			buildPhases = (
+				3AD96E611AFE6EF700B62840 /* Sources */,
+				3AD96E621AFE6EF700B62840 /* Frameworks */,
+				3AD96E631AFE6EF700B62840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocadasOnline;
+			productName = CocadasOnline;
+			productReference = 3AD96E651AFE6EF700B62840 /* CocadasOnline.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AD96E7D1AFE6EF700B62840 /* CocadasOnlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD96E8B1AFE6EF700B62840 /* Build configuration list for PBXNativeTarget "CocadasOnlineTests" */;
+			buildPhases = (
+				3AD96E7A1AFE6EF700B62840 /* Sources */,
+				3AD96E7B1AFE6EF700B62840 /* Frameworks */,
+				3AD96E7C1AFE6EF700B62840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AD96E801AFE6EF700B62840 /* PBXTargetDependency */,
+			);
+			name = CocadasOnlineTests;
+			productName = CocadasOnlineTests;
+			productReference = 3AD96E7E1AFE6EF700B62840 /* CocadasOnlineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AD96E5D1AFE6EF700B62840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Cristian Torres";
+				TargetAttributes = {
+					3AD96E641AFE6EF700B62840 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3AD96E7D1AFE6EF700B62840 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 3AD96E641AFE6EF700B62840;
+					};
+				};
+			};
+			buildConfigurationList = 3AD96E601AFE6EF700B62840 /* Build configuration list for PBXProject "CocadasOnline" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AD96E5C1AFE6EF700B62840;
+			productRefGroup = 3AD96E661AFE6EF700B62840 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AD96E641AFE6EF700B62840 /* CocadasOnline */,
+				3AD96E7D1AFE6EF700B62840 /* CocadasOnlineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AD96E631AFE6EF700B62840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD96E741AFE6EF700B62840 /* Main.storyboard in Resources */,
+				3AD96E791AFE6EF700B62840 /* LaunchScreen.xib in Resources */,
+				3AD96E761AFE6EF700B62840 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD96E7C1AFE6EF700B62840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AD96E611AFE6EF700B62840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A92259A1AFE92B000A8AB3A /* Carrito.m in Sources */,
+				3AD96E991AFE7F5100B62840 /* CocadasTableViewController.m in Sources */,
+				3AD96E6E1AFE6EF700B62840 /* AppDelegate.m in Sources */,
+				3AD96E961AFE73FA00B62840 /* Cocada.m in Sources */,
+				3AD96E9C1AFE829800B62840 /* OrdenarCocadaViewController.m in Sources */,
+				3AD96E931AFE721500B62840 /* CocadaTableViewCell.m in Sources */,
+				3AA4EE3C1AFE917300A43786 /* Orden.m in Sources */,
+				3AD96E6B1AFE6EF700B62840 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD96E7A1AFE6EF700B62840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD96E851AFE6EF700B62840 /* CocadasOnlineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AD96E801AFE6EF700B62840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AD96E641AFE6EF700B62840 /* CocadasOnline */;
+			targetProxy = 3AD96E7F1AFE6EF700B62840 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AD96E721AFE6EF700B62840 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD96E731AFE6EF700B62840 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AD96E771AFE6EF700B62840 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD96E781AFE6EF700B62840 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AD96E861AFE6EF700B62840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AD96E871AFE6EF700B62840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AD96E891AFE6EF700B62840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CocadasOnline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AD96E8A1AFE6EF700B62840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CocadasOnline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3AD96E8C1AFE6EF700B62840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CocadasOnlineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocadasOnline.app/CocadasOnline";
+			};
+			name = Debug;
+		};
+		3AD96E8D1AFE6EF700B62840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CocadasOnlineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocadasOnline.app/CocadasOnline";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AD96E601AFE6EF700B62840 /* Build configuration list for PBXProject "CocadasOnline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD96E861AFE6EF700B62840 /* Debug */,
+				3AD96E871AFE6EF700B62840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AD96E881AFE6EF700B62840 /* Build configuration list for PBXNativeTarget "CocadasOnline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD96E891AFE6EF700B62840 /* Debug */,
+				3AD96E8A1AFE6EF700B62840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AD96E8B1AFE6EF700B62840 /* Build configuration list for PBXNativeTarget "CocadasOnlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD96E8C1AFE6EF700B62840 /* Debug */,
+				3AD96E8D1AFE6EF700B62840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AD96E5D1AFE6EF700B62840 /* Project object */;
+}
